@@ -4,10 +4,10 @@ A Docker container containing an Hadoop SQL Stack (Hadoop, Zookeeper, Hive, Pig,
 ## What is Apache Drill Docker container project?
 An Hadoop based Sql Stack installation into a Docker container. Just run and enjoy.
 It's based on [sequenceiq/hadoop-docker](https://github.com/sequenceiq/hadoop-docker) images, plus:
-  - [Zookeeper](https://zookeeper.apache.org/)
-  - [Pig](https://pig.apache.org/)
-  - [Hive](https://hive.apache.org/)
-  - [HBase](https://hbase.apache.org/)
+  - [Zookeeper](https://zookeeper.apache.org/) (3.4.12)
+  - [Pig](https://pig.apache.org/) (v.0.17.0)
+  - [Hive](https://hive.apache.org/) (v.1.2.2)
+  - [HBase](https://hbase.apache.org/) (v.1.2.6)
 
 ### Run the container 
 
