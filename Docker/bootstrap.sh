@@ -18,6 +18,8 @@ service sshd start
 $HADOOP_PREFIX/sbin/start-dfs.sh &
 $HADOOP_PREFIX/sbin/start-yarn.sh &
 $HADOOP_PREFIX/sbin/mr-jobhistory-daemon.sh start historyserver &
+# Init HIVE
+$HIVE_PREFIX/bin/schematool -initSchema -dbType derby
 # Launch HIVE
 $HIVE_PREFIX/bin/hive --service metastore  &
 $HIVE_PREFIX/bin/hive --service hiveserver2 &
